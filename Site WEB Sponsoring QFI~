@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Présentation</title>
+    <style>
+        /* Style pour le fond de la page avec effet de flou */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('L25LOCQ0724.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Ajout d'un overlay pour renforcer l'effet de flou */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Style pour le menu latéral */
+        .side-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+        }
+
+        .side-menu h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .side-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .side-menu ul li {
+            margin: 10px 0;
+        }
+
+        .side-menu ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .side-menu ul li a:hover {
+            color: #0056b3;
+        }
+
+        /* Style pour le contenu principal */
+        .content {
+            position: relative;
+            margin-left: 270px;
+            color: white;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Overlay pour l'effet de flou -->
+    <div class="overlay"></div>
+
+    <!-- Menu latéral -->
+    <div class="side-menu">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+            <li><a href="page5.html">Page 5</a></li>
+            <li><a href="page6.html">Page 6</a></li>
+            <li><a href="page7.html">Page 7</a></li>
+        </ul>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Bienvenue sur Mon Site</h1>
+        <p>Ceci est la page de présentation de votre site. Vous pouvez y ajouter du contenu pertinent pour accueillir vos visiteurs.</p>
+    </div>
+</body>
+</html>
